@@ -13,7 +13,7 @@ fit <- us_gasoline %>%
   model(NNETAR(Barrels))
 
 preds <- fit %>%
-  forecast(h = '10 weeks')
+  forecast(h = "10 weeks")
 
 preds %>%
   autoplot(us_gasoline)
