@@ -10,7 +10,7 @@ summary(us_gasoline$Barrels)
 autoplot(us_gasoline)
 
 fit <- us_gasoline %>%
-  model(NNETAR(Barrels))
+  model(ARIMA(Barrels))
 
 preds <- fit %>%
   forecast(h = "10 weeks")
