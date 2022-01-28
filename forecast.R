@@ -16,4 +16,5 @@ preds <- fit %>%
   forecast(h = "10 weeks")
 
 preds %>%
-  autoplot(us_gasoline)
+  autoplot(us_gasoline) +
+  labs(title = "US Gasoline Forecast")
