@@ -13,7 +13,7 @@ fit <- us_gasoline %>%
   model(ARIMA(Barrels))
 
 preds <- fit %>%
-  forecast(h = '5 years')
+  forecast(h = '3 years')
 
 preds %>%
   autoplot(us_gasoline)
